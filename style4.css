@@ -1,0 +1,37 @@
+.sesi{
+    position: absolute;
+   
+       z-index: 2;
+       transform: translate(20%, -40%) scale(1,1);
+   }
+
+
+   .userpic{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(70%, -110%) scale(0.15);
+    border-radius: 50%;
+    
+    }
+
+    .usuariox{
+
+    
+        transform: translate(25%, 10%) scale(70%)
+        
+    }
+
+
+    .tabela {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .Voltar{
+
+        transform: translate(45%, 2000%);
+    }

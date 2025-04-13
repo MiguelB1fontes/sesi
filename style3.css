@@ -1,0 +1,68 @@
+.tabela {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body{
+
+    background-color: rgb(255, 255, 255);
+}
+
+.quadrado {
+    width: 20000px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+.sesi{
+ position: absolute;
+
+    z-index: 2;
+    transform: translate(20%, -40%) scale(1,1);
+}
+
+.userpic{
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(70%, -120%) scale(0.15);
+border-radius: 50%;
+
+}
+
+
+.usuariox{
+
+    
+    transform: translate(25%, 10%) scale(70%)
+    
+}
+
+
+
+.fazer{
+     
+    transform: translate(36%, -300%);
+}
+
+
+
+.Notas{
+ transform: translate(60%, 40%) scale(1.7);
+ 
+}
+
+.Hora{
+
+    transform: translate(15%, -100%) ;
+}
+
+
+.Voltar{
+
+    transform: translate(7%, 20%);
+}

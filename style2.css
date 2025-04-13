@@ -1,0 +1,42 @@
+.texto1{
+    text-align: center;
+    transform: translateY(1cm);
+    scale: 200%;
+}
+
+    
+    
+    
+    
+.quadrado {
+    width: 500px;
+    height: 400px;
+    background-color: rgb(47, 0, 255);
+    border-radius: 10px;    
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-51%, 30%);
+
+}
+
+.Insira{
+
+    position: absolute;
+    transform: translate(101%, 225%);
+    z-index: 2;
+}
+
+.caixa{
+
+    position: absolute;
+    z-index: 2;
+    transform: translate(230%, 1100%);
+}
+
+body {
+    background-image: url(img/sesiback.png);
+    
+  }
+  

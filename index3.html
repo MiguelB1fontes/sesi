@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sesi">
+
+        <img src="img/sesi.png" alt="">
+    
+    </div>
+
+    <div class="usuariox">
+        <body>
+            <h1 id="mensagem"></h1>
+          
+            <script>
+              const dadosSalvos = localStorage.getItem("nomeSalvo");
+          
+              if (dadosSalvos) {
+                const obj = JSON.parse(dadosSalvos);
+                const nome = obj.nome;
+                document.getElementById("mensagem").textContent = `Olá, ${nome}! Seja bem-vindo!`;
+              } else {
+                document.getElementById("mensagem").textContent = "Nome não encontrado!";
+              }
+            </script>
+    </div>
+
+    <div class="userpic">
+        <img src="img/userpic.jpg" alt="">
+    </div>
+    
+
+   
+    <div class="quadrado"></div>
+
+    <div class="tabela"> 
+    <table border="1">
+        <Caption>Horário Escolar</Caption>
+        <tr>
+            <th></th>
+            <th colspan="10">Dias da semana</th> 
+
+        
+        </tr>
+        <tr>
+            <th>Horário</th>
+            <td>Segunda</td>
+            <td>Terça</td>
+            <td>Quarta</td>
+            <td>Quinta</td>
+            <td>Sexta</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">8h-10h</td>
+           <td>Matmática</td>
+           <td>Química</td>
+
+           <td  align="center" rowspan="10" colspan="10"> Folga</td>
+           
+        </tr>
+        <tr>
+            <td>Matemática</td>
+            <td>Quimica</td>
+            
+        </tr>
+        
+        <tr>
+            <td rowspan="2">10h-12h</td>
+            <td>História</td>
+            <td><span style="color: red;">Aula Cancelada</span></td>
+
+        </tr>
+
+        <tr>
+            <td>História</td>
+            <td><span style="color: red;">Aula Cancelada</span></td>
+        </tr>
+        
+        <tr>
+
+          <td rowspan="2">14h-16h</td>
+          <td>Folga</td>
+          <td>Física</td>
+        </tr>
+        <tr>
+            <td>Folga</td>
+            <td>Física</td>
+        </tr>
+    </tr>    
+    </table>
+</div>
+
+<div class="Voltar">
+
+    <button id="voltar">Clique aqui para voltar</button>
+
+    <script>
+      document.getElementById("voltar").addEventListener("click", function () {
+        window.location.href= "index2.html"
+      });
+    </script>
+
+    </button>
+  </div>
+
+    
+</body>
+</html>

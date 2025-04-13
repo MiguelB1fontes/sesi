@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area do aluno</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="sesi">
+
+        <img src="img/sesi.png" alt="">
+    
+    </div>
+
+    <div class="usuariox">
+        <body>
+            <h1 id="mensagem"></h1>
+          
+            <script>
+              const dadosSalvos = localStorage.getItem("nomeSalvo");
+          
+              if (dadosSalvos) {
+                const obj = JSON.parse(dadosSalvos);
+                const nome = obj.nome;
+                document.getElementById("mensagem").textContent = `Olá, ${nome}! Seja bem-vindo!`;
+              } else {
+                document.getElementById("mensagem").textContent = "Nome não encontrado!";
+              }
+            </script>
+    </div>
+
+    <div class="userpic">
+        <img src="img/userpic.jpg" alt="">
+    </div>
+    
+
+   
+    <div class="quadrado"></div>
+  
+    <div class="fazer">
+      <H2>O que voce gostaria de conferir?</H2>
+    </div>
+
+    <div class="Notas">
+            <button id="meuBotao">Verificar suas notas</button>
+
+        <script>
+          document.getElementById("meuBotao").addEventListener("click", function () {
+            window.location.href = "index4.html";
+          });
+        </script>
+        <div class="Hora">
+            <button id="horario">Vizualizar quadro de horários</button>
+            
+            <script>
+                document.getElementById("horario").addEventListener("click", function () {
+                    window.location.href= "index3.html";
+                });
+            </script>
+        </div>
+        
+    <div class="Voltar">
+
+      <button id="voltar">Clique aqui para voltar</button>
+
+      <script>
+        document.getElementById("voltar").addEventListener("click", function () {
+          window.location.href= "index.html"
+        });
+      </script>
+
+      </button>
+    </div>
+
+    
+</body>
+</html>

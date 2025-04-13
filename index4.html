@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <div class="sesi">
+
+        <img src="img/sesi.png" alt="">
+    
+    </div>
+
+    <div class="usuariox">
+        <body>
+            <h1 id="mensagem"></h1>
+          
+            <script>
+              const dadosSalvos = localStorage.getItem("nomeSalvo");
+          
+              if (dadosSalvos) {
+                const obj = JSON.parse(dadosSalvos);
+                const nome = obj.nome;
+                document.getElementById("mensagem").textContent = `Olá, ${nome}! Seja bem-vindo!`;
+              } else {
+                document.getElementById("mensagem").textContent = "Nome não encontrado!";
+              }
+            </script>
+    </div>
+
+    <div class="userpic">
+        <img src="img/userpic.jpg" alt="">
+    </div>
+    
+</div>
+
+   
+   <div class="tabela">
+
+   
+   
+    <table border="1">
+        <Caption>Notas</Caption>
+        <tr>
+            <th></th>
+            <th colspan="10">Matérias</th> 
+
+        
+        </tr>
+        <tr>
+            <th>Notas</th>
+            <td>Matemática</td>
+            <td>Portugues</td>
+            <td>Quimíca</td>
+            <td>Hitória</td>
+            <td>Inglês</td>
+        </tr>
+
+        <tr>
+            <td>Etapa 1</td>
+            <td><p id="numero"></p>
+
+                <script>
+                  const numeroAleatorio = Math.floor(Math.random() * 31); // 0 a 100
+                  document.getElementById("numero").innerText = numeroAleatorio;
+                </script></td>
+                <td><p id="numero2"></p>
+
+                    <script>
+                      const numeroAleatorio2 = Math.floor(Math.random() * 31); // 0 a 100
+                      document.getElementById("numero2").innerText = numeroAleatorio2;
+                    </script></td>
+                    <td><p id="numero3"></p>
+
+                        <script>
+                          const numeroAleatorio3 = Math.floor(Math.random() * 31); // 0 a 100
+                          document.getElementById("numero3").innerText = numeroAleatorio3;
+                        </script></td>
+                        <td><p id="numero4"></p>
+
+                            <script>
+                              const numeroAleatorio4 = Math.floor(Math.random() * 31); // 0 a 100
+                              document.getElementById("numero4").innerText = numeroAleatorio4;
+                            </script></td>
+                            <td><p id="numero5"></p>
+
+                                <script>
+                                  const numeroAleatorio5 = Math.floor(Math.random() * 31); // 0 a 100
+                                  document.getElementById("numero5").innerText = numeroAleatorio5;
+                                </script></td>
+        </tr>
+        <tr>
+            <td>Etapa 2</td>
+            <td><p id="numero6"></p>
+
+                <script>
+                  const numeroAleatorio6 = Math.floor(Math.random() * 31); // 0 a 100
+                  document.getElementById("numero6").innerText = numeroAleatorio6;
+                </script></td>  
+                <td><p id="numero7"></p>
+
+                    <script>
+                      const numeroAleatorio7 = Math.floor(Math.random() * 31); // 0 a 100
+                      document.getElementById("numero7").innerText = numeroAleatorio7;
+                    </script></td>
+                    <td><p id="numero8"></p>
+
+                        <script>
+                          const numeroAleatorio8 = Math.floor(Math.random() * 31); // 0 a 100
+                          document.getElementById("numero8").innerText = numeroAleatorio8;
+                        </script></td>
+                        <td><p id="numero10"></p>
+
+                            <script>
+                              const numeroAleatorio10 = Math.floor(Math.random() * 31); // 0 a 100
+                              document.getElementById("numero10").innerText = numeroAleatorio10;
+                            </script></td>
+                            <td><p id="numero11"></p>
+
+                                <script>
+                                  const numeroAleatorio11 = Math.floor(Math.random() * 31); // 0 a 100
+                                  document.getElementById("numero11").innerText = numeroAleatorio11;
+                                </script></td>
+        </tr>
+        <tr>
+         <td>Etapa 3</td>
+         <td><p id="numero12"></p>
+
+            <script>
+              const numeroAleatorio12 = Math.floor(Math.random() * 31); // 0 a 100
+              document.getElementById("numero12").innerText = numeroAleatorio12;
+            </script></td>
+            <td><p id="numero14"></p>
+
+                <script>
+                  const numeroAleatorio14 = Math.floor(Math.random() * 31); // 0 a 100
+                  document.getElementById("numero14").innerText = numeroAleatorio14;
+                </script></td>
+                <td><p id="numero15"></p>
+
+                    <script>
+                      const numeroAleatorio15 = Math.floor(Math.random() * 31); // 0 a 100
+                      document.getElementById("numero15").innerText = numeroAleatorio15;
+                    </script></td>
+                    <td><p id="numero16"></p>
+
+                        <script>
+                          const numeroAleatorio16 = Math.floor(Math.random() * 31); // 0 a 100
+                          document.getElementById("numero16").innerText = numeroAleatorio16;
+                        </script></td>
+                        <td><p id="numero17"></p>
+
+                            <script>
+                              const numeroAleatorio17 = Math.floor(Math.random() * 31); // 0 a 100
+                              document.getElementById("numero17").innerText = numeroAleatorio17;
+                            </script></td>
+                    
+        </tr>
+        
+   
+    </tr>  
+    </table>
+</div>
+
+<div class="Voltar">
+
+  <button id="voltar">Clique aqui para voltar</button>
+
+  <script>
+    document.getElementById("voltar").addEventListener("click", function () {
+      window.location.href= "index2.html"
+    });
+  </script>
+
+  </button>
+</div>
+
+    
+</body>
+</html>
